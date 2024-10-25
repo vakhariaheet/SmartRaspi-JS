@@ -1,5 +1,5 @@
 import low from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
+import FileSync from 'lowdb/adapters/FileSync.js';
 
 class DB {
     constructor(db) {
