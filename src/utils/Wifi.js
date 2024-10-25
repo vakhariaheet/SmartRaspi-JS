@@ -1,6 +1,6 @@
 import Wifi from 'node-wifi';
 import fs from 'fs';
-
+import dns from 'dns'
 Wifi.init({
     iface: null
 });
@@ -31,7 +31,7 @@ export const getAllAvailableWifi = () => new Promise((resolve, reject) => {
 });
 
 export const isInternetConnected = async () => new Promise((resolve, reject) => {
-    require('dns').resolve('www.google.com', function (err) {
+    dns.resolve('www.google.com', function (err) {
         if (err) {
             reject(false);
         } else {
