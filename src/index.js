@@ -31,6 +31,8 @@ let recording = null;
 startBLE();
 initWifi();
 
+console.log(process.env);
+
 (async () => {
     try {
         const player = PlaySound({
