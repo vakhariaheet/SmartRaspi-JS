@@ -1,5 +1,5 @@
 import { libcamera } from 'libcamera';
-import { playSpeech } from './TextToSpeech';
+import { playSpeech } from './TextToSpeech.js';
 
 const capture = async (name = 'test.jpeg') => {
     await libcamera.still({

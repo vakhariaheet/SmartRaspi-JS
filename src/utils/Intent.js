@@ -1,10 +1,10 @@
 import { exec } from "child_process";
-import { readTemperature } from "./Temperature";
-import { playSpeech, playSpeechSync, textToSpeech } from "./TextToSpeech";
-import capture from "./ImageCapture";
-import imageToText from "./OCR";
-import { detectCurrency, generateText } from "./Bard";
-import { getPlaceInfo } from "./Maps";
+import { readTemperature } from "./Temperature.js";
+import { playSpeech, playSpeechSync, textToSpeech } from "./TextToSpeech.js";
+import capture from "./ImageCapture.js";
+import imageToText from "./OCR.js";
+import { detectCurrency, generateText } from "./Bard.js";
+import { getPlaceInfo } from "./Maps.js";
 
 function setVolume(volume) {
   const command = `amixer sset 'Master' ${volume}%`;

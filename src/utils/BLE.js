@@ -1,5 +1,5 @@
 import bleno from '@abandonware/bleno';
-import { connectToWifi, getWifiConnection } from './Wifi';
+import { connectToWifi, getWifiConnection } from './Wifi.js';
 import { writeFileSync } from 'fs';
 
 class PairCharacteristic extends bleno.Characteristic {

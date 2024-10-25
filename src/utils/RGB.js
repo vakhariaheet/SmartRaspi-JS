@@ -1,5 +1,5 @@
 import { Gpio } from "pigpio";
-import { PINS } from "../constants/pins";
+import { PINS } from "../constants/pins.js";
 
 class RGB {
     constructor() {

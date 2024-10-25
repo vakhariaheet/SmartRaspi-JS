@@ -1,6 +1,6 @@
 import fs from 'fs';
 import recorder from 'node-record-lpcm16';
-import { playSpeech } from './TextToSpeech';
+import { playSpeech } from './TextToSpeech.js';
 import axios from 'axios';
 
 export const startRecord = async () => {

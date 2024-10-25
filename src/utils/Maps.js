@@ -1,5 +1,5 @@
-import getDB from "./DB";
-import { playSpeech, textToSpeech } from "./TextToSpeech";
+import getDB from "./DB.js";
+import { playSpeech, textToSpeech } from "./TextToSpeech.js";
 import { convert } from "html-to-text";
 
 export const getPlaceInfo = async (q) => {
