@@ -1,17 +1,17 @@
 import { Gpio } from 'pigpio';
-import capture from './utils/ImageCapture';
-import imageToText from './utils/Bard';
-import { textToSpeech, playSpeech, playSpeechSync } from './utils/TextToSpeech';
-import initGPS from './utils/GPS';
-import RGB from './utils/RGB';
+import capture from './utils/ImageCapture.js';
+import imageToText from './utils/Bard.js';
+import { textToSpeech, playSpeech, playSpeechSync } from './utils/TextToSpeech.js';
+import initGPS from './utils/GPS.js';
+import RGB from './utils/RGB.js';
 import PlaySound from 'play-sound';
 
-import { startRecord, stopRecord } from './utils/Record';
-import handleIntent from './utils/Intent';
-import { startBLE } from './utils/BLE';
-import { initWifi } from './utils/Wifi';
-import getDB from './utils/DB';
-import { PINS } from './constants/pins';
+import { startRecord, stopRecord } from './utils/Record.js';
+import handleIntent from './utils/Intent.js';
+import { startBLE } from './utils/BLE.js';
+import { initWifi } from './utils/Wifi.js';
+import getDB from './utils/DB.js';
+import { PINS } from './constants/pins.js';
 
 RGB.setColor({ r: 255, b: 0, g: 0 });
 
