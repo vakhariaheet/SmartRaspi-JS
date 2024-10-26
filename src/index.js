@@ -30,8 +30,8 @@ let isACommandRunning = false;
 let recording = null;
 
 // initGPS();
-startBLE();
-initWifi();
+// startBLE();
+// initWifi();
 
 console.log(process.env);
 const player = PlaySound({
