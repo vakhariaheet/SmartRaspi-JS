@@ -13,6 +13,7 @@ import { initWifi } from './utils/Wifi.js';
 import getDB from './utils/DB.js';
 import { PINS } from './constants/pins.js';
 import { readFile } from 'fs/promises';
+import path from 'path';
 
 RGB.setColor({ r: 255, b: 0, g: 0 });
 
@@ -41,7 +42,7 @@ console.log(process.env);
         const player = PlaySound({
             player: 'mplayer'
         });
-
+        console.log(path.resolve('.'));
         player.play('welcome.mp3', function(err) {
             if (err) throw err;
         });

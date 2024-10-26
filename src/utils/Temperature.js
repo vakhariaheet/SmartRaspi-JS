@@ -13,3 +13,5 @@ export const readTemperature = () => new Promise((resolve, reject) => {
         }
     });
 });
+
+readTemperature().then(console.log);
