@@ -4,7 +4,7 @@ import imageToText from './utils/Bard.js';
 import { textToSpeech, playSpeech, playSpeechSync } from './utils/TextToSpeech.js';
 import initGPS from './utils/GPS.js';
 import RGB from './utils/RGB.js';
-import PlaySound from 'play-sound';
+import Player from 'play-sound';
 
 import { startRecord, stopRecord } from './utils/Record.js';
 import handleIntent from './utils/Intent.js';
@@ -48,7 +48,7 @@ player.play('./src/assets/sfx/capture.mp3', function (err) {
     try {
         const data = await readFile(path.resolve('./src/assets/sfx/capture.mp3'), 'utf8');
         console.log(data[0]);
-        const player = PlaySound({
+        const player = Player({
             player: 'mplayer'
         });
     
