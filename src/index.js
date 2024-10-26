@@ -37,16 +37,17 @@ console.log(process.env);
 
 (async () => {
     try {
-        const data = await readFile('welcome.mp3', 'utf8');
+        const data = await readFile(path.resolve('./src/assets/sfx/capture.mp3'), 'utf8');
         console.log(data[0]);
         const player = PlaySound({
             player: 'mplayer'
         });
-        console.log(path.resolve('.'));
-        player.play('welcome.mp3', function(err) {
+    
+        console.log(path.resolve('./src/assets/sfx/capture.mp3'));
+        player.play(path.resolve('./src/assets/sfx/capture.mp3'), function(err) {
             if (err) throw err;
         });
-        await playSpeech('./src/assets/sfx/capture.mp3');
+        await playSpeech(path.resolve('./src/assets/sfx/capture.mp3'));
         console.log('fdsfdkj');
     } catch (err) {
         console.log(err);
