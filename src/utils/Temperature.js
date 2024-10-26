@@ -1,4 +1,4 @@
-import * as sensor from 'node-dht-sensor';
+import sensor from 'node-dht-sensor';
 import { PINS } from '../constants/pins.js';
 
 const sensorType = 11; // DHT11 sensor type
