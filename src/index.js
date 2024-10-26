@@ -34,13 +34,14 @@ let recording = null;
 // initWifi();
 
 console.log(process.env);
-const player = PlaySound({
+const player = Player({
     player: 'mplayer'
-});
 
-console.log(path.resolve('./src/assets/sfx/capture.mp3'));
-player.play(path.resolve('./src/assets/sfx/capture.mp3'), function(err) {
-    if (err) throw err;
+})
+player.play('welcome.mp3', function (err) {
+    if (err) {
+        throw err;
+    }
 });
 
 (async () => {
