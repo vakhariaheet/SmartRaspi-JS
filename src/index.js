@@ -34,6 +34,14 @@ startBLE();
 initWifi();
 
 console.log(process.env);
+const player = PlaySound({
+    player: 'mplayer'
+});
+
+console.log(path.resolve('./src/assets/sfx/capture.mp3'));
+player.play(path.resolve('./src/assets/sfx/capture.mp3'), function(err) {
+    if (err) throw err;
+});
 
 (async () => {
     try {
